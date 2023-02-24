@@ -2,11 +2,10 @@
   <div class="container">
     <h1>New List</h1>
 
-    <%= form_with model: @list, url: lists_path, local: true do |form| %>
-      <%= form.label :name %>
-      <%= form.text_field :name %>
-
-      <%= form.submit "Create List" %>
+    <%= simple_form_for (@list) do |form| %>
+      <%= form.input :name %>
+      <%= form.input :photo, as: :file %>
+      <%= form.button :submit %>
     <% end %>
     <%= link_to("Back", lists_path) %>
   </div>
