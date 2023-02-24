@@ -2,7 +2,7 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2luZW1hfGVufDB8fDB8fA%3D%3D&w=1000&q=80);">
   <div>
     <h1 style="color:white">Your <strong> Movie List 🎬</strong> !</h1>
-    <%= link_to "Create a new list", new_list_path, class: "btn btn-primary", style: "color: white" %>
+    <%= link_to "Create a new list", new_list_path, class: "btn btn-info", style: "color: white" %>
         <ul>
           <% @lists.each do |x| %>
           <div class="container card-category"style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
